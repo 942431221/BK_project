@@ -4,7 +4,6 @@ if RUN_VER == 'open':
     from blueapps.patch.settings_open_saas import *  # noqa
 else:
     from blueapps.patch.settings_paas_services import *  # noqa
-
 # 本地开发环境
 RUN_MODE = 'DEVELOP'
 
@@ -27,9 +26,9 @@ DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': APP_CODE,
+        'NAME': 'BK_Project',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'mysql',
         'HOST': 'localhost',
         'PORT': '3306',
     },

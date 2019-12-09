@@ -69,8 +69,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'pywy*dhbub(60m4$jdt*v*2&4x&tum(sphoti&yyet@v_pn=bh'
 # CELERY 开关，使用时请改为 True，否则请保持为False。启动方式为以下两行命令：
 # worker: python manage.py celery worker -l info
 # beat: python manage.py celery beat -l info
